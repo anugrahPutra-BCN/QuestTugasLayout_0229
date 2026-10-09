@@ -27,4 +27,36 @@ fun LayoutScreen() {
             .padding(dimensionResource(R.dimen.padding_screen)),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.spacing_card))
-    )
+    ) {
+        Header()
+
+        CardItem(
+            backgroundColorRes = R.color.card_gray,
+            nameRes = R.string.name_1,
+            addressRes = R.string.address_1,
+            addressColorRes = R.color.text_yellow,
+            nameFontFamily = FontFamily.Cursive,
+            nameFontStyle = FontStyle.Italic,
+            nameFontWeight = FontWeight.Normal
+        )
+        CardItem(
+            backgroundColorRes = R.color.card_purple,
+            nameRes = R.string.name_2,
+            phoneRes = R.string.phone_2,
+            addressRes = R.string.address_2,
+            addressColorRes = R.color.text_yellow
+        )
+        CardItem(
+            backgroundColorRes = R.color.card_blue,
+            nameRes = R.string.name_3,
+            phoneRes = R.string.phone_3,
+            addressRes = R.string.address_3,
+            addressColorRes = R.color.text_white
+        )
+        CardItem(
+            backgroundColorRes = R.color.card_green,
+            nameRes = R.string.name_4,
+            phoneRes = R.string.phone_4,
+            addressRes = R.string.address_4,
+            addressColorRes = R.color.text_white
+        )
