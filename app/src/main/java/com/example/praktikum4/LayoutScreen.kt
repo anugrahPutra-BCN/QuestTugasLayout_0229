@@ -60,3 +60,13 @@ fun LayoutScreen() {
             addressRes = R.string.address_4,
             addressColorRes = R.color.text_white
         )
+
+        Spacer(Modifier.weight(1f))
+
+        Text(
+            text = stringResource(R.string.footer_copyright),
+            color = colorResource(R.color.text_primary),
+            fontSize = dimensionResource(R.dimen.text_footer).value.sp
+        )
+    }
+}
