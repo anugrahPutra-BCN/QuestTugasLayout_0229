@@ -24,3 +24,16 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+
+@Composable
+fun CardItem(
+    @ColorRes backgroundColorRes: Int,
+    @StringRes nameRes: Int,
+    @StringRes addressRes: Int,
+    @ColorRes addressColorRes: Int,
+    modifier: Modifier = Modifier,
+    @StringRes phoneRes: Int? = null,
+    nameFontFamily: FontFamily = FontFamily.Default,
+    nameFontStyle: FontStyle = FontStyle.Normal,
+    nameFontWeight: FontWeight = FontWeight.Bold
+)
