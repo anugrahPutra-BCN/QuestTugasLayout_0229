@@ -12,3 +12,9 @@
     <dimen name="card_corner">8dp</dimen>
     <dimen name="card_elevation">4dp</dimen>
 
+    <dimen name="text_header_title">24sp</dimen>
+    <dimen name="text_header_subtitle">13sp</dimen>
+    <dimen name="text_name">20sp</dimen>
+    <dimen name="text_detail">12sp</dimen>
+    <dimen name="text_footer">12sp</dimen>
+</resources>
