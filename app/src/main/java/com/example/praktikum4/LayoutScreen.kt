@@ -72,4 +72,23 @@ fun LayoutScreen() {
 }
 
 @Composable
-private fun Header()
+private fun Header() {
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.spacing_header)),
+        modifier = Modifier.padding(bottom = dimensionResource(R.dimen.spacing_header_bottom))
+    ) {
+        Text(
+            text = stringResource(R.string.header_title),
+            color = colorResource(R.color.text_primary),
+            fontSize = dimensionResource(R.dimen.text_header_title).value.sp,
+            fontWeight = FontWeight.Bold
+        )
+        Text(
+            text = stringResource(R.string.header_subtitle),
+            color = colorResource(R.color.text_primary),
+            fontSize = dimensionResource(R.dimen.text_header_subtitle).value.sp,
+            fontWeight = FontWeight.Bold
+        )
+    }
+}
